@@ -208,18 +208,6 @@ export function PurposeSelector(props: { conversationId: string, runExample: (ex
             )}
         </Typography>
 
-        {systemPurposeId === 'Custom' && (
-          <Textarea
-            variant='outlined' autoFocus placeholder={'Craft your custom system message here…'}
-            minRows={3}
-            defaultValue={SystemPurposes['Custom']?.systemMessage} onChange={handleCustomSystemMessageChange}
-            sx={{
-              background: theme.vars.palette.background.level1,
-              lineHeight: 1.75,
-              mt: 1,
-            }} />
-        )}
-
       </Box>
 
     </Stack>
